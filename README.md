@@ -1,13 +1,28 @@
+What is Jack?
+=============
+
+Jack is a Blackjack game engine written in python3. It is intended to be
+easily configurable for different house rules and strategies of play. It can simulate thousands of Blackjack games per second on a single thread.
+
+
 Instructions:
 =============
 
-Use jupyter notebook to open experiments.ipynb and run experiments.
+Supported environment(s): MacOS 10.x
 
-To run tests: $python3 test_runner.py
+Required software: python 3.x, jupyter notebook (optional)
+
+To run tests: 
+
+    $ python3 test_runner.py
+
+The best way to get a feel for the code/API is to open experiments.ipynb
+with jupyter notebook, run the existing experiments, and create your own.
+
 
 
 Gameplay Assumptions 
-===========
+====================
 
 stand on soft 17
 8 deck shoe
@@ -18,11 +33,11 @@ Double down allowed after pair splitting
 second splits allowed (easier to implement)
   should work as is, just implement playerHand correctly 
 
-House edge === expected loss
+
 
 
 TODO
-======
+====
 
 - allow variable betting (currently assumes every bet is 1 unit)
 - implement different strategies
@@ -32,9 +47,9 @@ TODO
 
 
 Misc
-=====
+====
 
-Blacjack rules at casinos:
+Blackjack rules at casinos:
 
 https://wizardofvegas.com/guides/blackjack-survey//
 DOA: double on anything
@@ -42,5 +57,5 @@ DAS: double after split
 
 most 6-8 deck games in vegas are DOA and DAS
 
-
+House edge === expected loss
 
